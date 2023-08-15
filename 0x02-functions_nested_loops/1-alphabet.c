@@ -11,7 +11,7 @@ void print_alphabet(void)
 
 	c = 'a';
 
-	while (c >= 'a')
+	while (c >= 'a' && c <= 'z')
 	{
 		_putchar(c);
 		c++;
