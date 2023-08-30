@@ -3,21 +3,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * positive_or_negative - A function that checks
+ * if a number is postive or negative
+ * @i: The number to be checked
+ * Return: Nothing
  */
 
-int main(void)
+void positive_or_negative(int i)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		printf("%d is postive\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
+	if (i > 0)
+		printf("%d is postive\n", i);
+	else if (i == 0)
+		printf("%d is zero\n", i);
 	else
-		printf("%d is negative\n", n);
-	return (0);
+		printf("%d is negative\n", i);
 }
