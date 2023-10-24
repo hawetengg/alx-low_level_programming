@@ -23,7 +23,7 @@ char *cap_string(char *str)
 		str[i] == '{' ||
 		str[i] == '}' ||
 		str[i] == ' ' ||
-		str[i] == '	' ||
+		str[i] == '\t' ||
 		str[i] == '\n' ||
 		str[i] == 0
 		)
